@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`curry function syntax should parse 1`] = `
+Node {
+  "comments": Array [],
+  "end": 17,
+  "errors": Array [],
+  "extra": undefined,
+  "innerComments": undefined,
+  "leadingComments": undefined,
+  "loc": SourceLocation {
+    "end": Position {
+      "column": 17,
+      "line": 1,
+    },
+    "filename": undefined,
+    "identifierName": undefined,
+    "start": Position {
+      "column": 0,
+      "line": 1,
+    },
+  },
+  "program": Node {
+    "body": Array [
+      Node {
+        "body": Array [
+          Node {
+            "body": Array [
+              Node {
+                "declarations": Array [
+                  Node {
+                    "end": 13,
+                    "extra": undefined,
+                    "id": Node {
+                      "end": 10,
+                      "extra": undefined,
+                      "innerComments": undefined,
+                      "leadingComments": undefined,
+                      "loc": SourceLocation {
+                        "end": Position {
+                          "column": 10,
+                          "line": 1,
+                        },
+                        "filename": undefined,
+                        "identifierName": "a",
+                        "start": Position {
+                          "column": 9,
+                          "line": 1,
+                        },
+                      },
+                      "name": "a",
+                      "range": undefined,
+                      "start": 9,
+                      "trailingComments": undefined,
+                      "type": "Identifier",
+                    },
+                    "init": Node {
+                      "end": 13,
+                      "extra": Object {
+                        "raw": "2",
+                        "rawValue": 2,
+                      },
+                      "innerComments": undefined,
+                      "leadingComments": undefined,
+                      "loc": SourceLocation {
+                        "end": Position {
+                          "column": 13,
+                          "line": 1,
+                        },
+                        "filename": undefined,
+                        "identifierName": undefined,
+                        "start": Position {
+                          "column": 12,
+                          "line": 1,
+                        },
+                      },
+                      "range": undefined,
+                      "start": 12,
+                      "trailingComments": undefined,
+                      "type": "NumericLiteral",
+                      "value": 2,
+                    },
+                    "innerComments": undefined,
+                    "leadingComments": undefined,
+                    "loc": SourceLocation {
+                      "end": Position {
+                        "column": 13,
+                        "line": 1,
+                      },
+                      "filename": undefined,
+                      "identifierName": undefined,
+                      "start": Position {
+                        "column": 9,
+                        "line": 1,
+                      },
+                    },
+                    "range": undefined,
+                    "start": 9,
+                    "trailingComments": undefined,
+                    "type": "VariableDeclarator",
+                  },
+                ],
+                "end": 14,
+                "extra": undefined,
+                "innerComments": undefined,
+                "kind": "const",
+                "leadingComments": undefined,
+                "loc": SourceLocation {
+                  "end": Position {
+                    "column": 14,
+                    "line": 1,
+                  },
+                  "filename": undefined,
+                  "identifierName": undefined,
+                  "start": Position {
+                    "column": 3,
+                    "line": 1,
+                  },
+                },
+                "range": undefined,
+                "start": 3,
+                "trailingComments": undefined,
+                "type": "VariableDeclaration",
+              },
+            ],
+            "directives": Array [],
+            "end": 16,
+            "extra": undefined,
+            "innerComments": undefined,
+            "leadingComments": undefined,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 16,
+                "line": 1,
+              },
+              "filename": undefined,
+              "identifierName": undefined,
+              "start": Position {
+                "column": 1,
+                "line": 1,
+              },
+            },
+            "range": undefined,
+            "start": 1,
+            "trailingComments": undefined,
+            "type": "BlockStatement",
+          },
+        ],
+        "directives": Array [],
+        "end": 17,
+        "extra": undefined,
+        "innerComments": undefined,
+        "leadingComments": undefined,
+        "loc": SourceLocation {
+          "end": Position {
+            "column": 17,
+            "line": 1,
+          },
+          "filename": undefined,
+          "identifierName": undefined,
+          "start": Position {
+            "column": 0,
+            "line": 1,
+          },
+        },
+        "range": undefined,
+        "start": 0,
+        "trailingComments": undefined,
+        "type": "BlockStatement",
+      },
+    ],
+    "directives": Array [],
+    "end": 17,
+    "extra": undefined,
+    "innerComments": undefined,
+    "interpreter": null,
+    "leadingComments": undefined,
+    "loc": SourceLocation {
+      "end": Position {
+        "column": 17,
+        "line": 1,
+      },
+      "filename": undefined,
+      "identifierName": undefined,
+      "start": Position {
+        "column": 0,
+        "line": 1,
+      },
+    },
+    "range": undefined,
+    "sourceType": "module",
+    "start": 0,
+    "trailingComments": undefined,
+    "type": "Program",
+  },
+  "range": undefined,
+  "start": 0,
+  "trailingComments": undefined,
+  "type": "File",
+}
+`;
