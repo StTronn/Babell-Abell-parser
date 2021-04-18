@@ -111,9 +111,14 @@ export default (superClass: Class<Parser>): Class<Parser> =>
         switch (ch) {
           case charCodes.lessThan:
           case charCodes.leftCurlyBrace:
-            if(this.input.charCodeAt(this.state.pos + 1) === charCodes.leftCurlyBrace &&
-            this.input.charCodeAt(this.state.pos -1) !==charCodes.equalsTo)
-            ++this.state.pos;
+            if (
+              this.input.charCodeAt(this.state.pos + 1) ===
+                charCodes.leftCurlyBrace &&
+              this.input.charCodeAt(this.state.pos - 1) !== charCodes.equalsTo
+            ) {
+              ++this.state.pos;
+              chunkStart++;
+            }
             if (this.state.pos === this.state.start) {
               if (ch === charCodes.lessThan && this.state.exprAllowed) {
                 ++this.state.pos;
@@ -132,8 +137,14 @@ export default (superClass: Class<Parser>): Class<Parser> =>
 
           case charCodes.greaterThan:
           case charCodes.rightCurlyBrace:
-            if(this.input.charCodeAt(this.state.pos + 1) === charCodes.rightCurlyBrace &&
-            this.input.charCodeAt(this.state.pos -1) !==charCodes.equalsTo) ++this.state.pos;
+            if (
+              this.input.charCodeAt(this.state.pos + 1) ===
+                charCodes.rightCurlyBrace &&
+              this.input.charCodeAt(this.state.pos - 1) !== charCodes.equalsTo
+            ) {
+              ++this.state.pos;
+              chunkStart++;
+            }
             if (process.env.BABEL_8_BREAKING) {
               const htmlEntity =
                 ch === charCodes.rightCurlyBrace ? "&rbrace;" : "&gt;";
